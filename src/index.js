@@ -154,6 +154,7 @@ input.addEventListener("change", function () {
                 articles.articles[property].group.substring(0, 5) === "95014"
               ) {
                 sandwichesCalc += data[48];
+                console.log(data[48]);
               } else if (
                 articles.articles[property].group.substring(0, 5) === "95010" ||
                 articles.articles[property].group.substring(0, 5) === "95012" ||
