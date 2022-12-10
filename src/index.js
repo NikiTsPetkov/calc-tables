@@ -1,5 +1,5 @@
-import './src/styles.css';
-import articles from './src/articles.json';
+import './styles.css';
+import articles from './articles.json';
 import readXlsxFile from 'read-excel-file';
 
 let input = document.getElementById('input');
