@@ -105,9 +105,12 @@ input.addEventListener('change', function () {
             td.innerText = data[15];
             sandPcs.appendChild(td);
             console.log(data[15]);
+          } else if (data[0] === 'Сладки печива') {
+            pieces += data[15];
           } else if (
-            data[0] === 'Солени Печива' ||
-            data[0] === 'Сладки печива'
+            data[0] === 'Солени Печива'
+            // ||
+            // data[0] === 'Сладки печива'
           ) {
             const td = document.createElement('td');
             td.innerText = ((pieces + data[15]) / 2).toFixed(0);
