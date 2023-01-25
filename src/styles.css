@@ -83,6 +83,10 @@ button.showTable:hover {
   display: none;
   z-index: -100;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .load {
   position: absolute;
   width: 100%;
