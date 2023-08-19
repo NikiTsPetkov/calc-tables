@@ -104,7 +104,7 @@ input.addEventListener('change', function () {
             const td = document.createElement('td');
             td.innerText = data[15];
             sandPcs.appendChild(td);
-            console.log(data[15]);
+            // console.log(data[15]);
           } else if (data[0] === 'Сладки печива') {
             pieces += data[15];
           } else if (
@@ -160,7 +160,7 @@ input.addEventListener('change', function () {
                 articles.articles[property].group.substring(0, 5) === '95014'
               ) {
                 sandwichesCalc += data[48];
-                console.log(data[48]);
+                // console.log(data[48]);
               } else if (
                 articles.articles[property].group.substring(0, 5) === '95010' ||
                 articles.articles[property].group.substring(0, 5) === '95012' ||
