@@ -63,11 +63,11 @@ input.addEventListener('change', function () {
       ) {
         // console.log(typeof result[0][1]);
         result.forEach((data) => {
-          if (data[8].startsWith('2GO')) {
-            pieces += data[47];
-          } else {
-            piecesAll += data[47];
-          }
+          // if (data[8].startsWith('2GO')) {
+          //   pieces += data[47];
+          // } else {
+          //   piecesAll += data[47];
+          // }
           if (data[0] === 'Горива - Rimos') {
             const td = document.createElement('td');
             td.innerText = data[15].toFixed(2);
