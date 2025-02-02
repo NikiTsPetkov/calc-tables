@@ -37,6 +37,7 @@ let count = 1,
   sandwichesCalc = 0,
   backShopAndOthersCalc = 0,
   pieces = 0,
+  piecesAll = 0,
   maxxMotionDiesel = 0,
   maxxMotion100 = 0,
   a95 = 0,
@@ -62,9 +63,11 @@ input.addEventListener('change', function () {
       ) {
         // console.log(typeof result[0][1]);
         result.forEach((data) => {
-          // if (data[8] === 'TG КроасанМасло2бр') {
-          //   pieces = data[47];
-          // }
+          if (data[8].startsWith('2GO')) {
+            pieces += data[47];
+          } else {
+            piecesAll += data[47];
+          }
           if (data[0] === 'Горива - Rimos') {
             const td = document.createElement('td');
             td.innerText = data[15].toFixed(2);
@@ -114,7 +117,7 @@ input.addEventListener('change', function () {
           ) {
             const td = document.createElement('td');
             // td.innerText = ((pieces + data[15]) / 2).toFixed(0);
-            td.innerText = data[15];
+            td.innerText = piecesAll;
             backShopAndOthersPcs.appendChild(td);
           } else if (
             data[0] === 'Магазин – Rimos' ||
